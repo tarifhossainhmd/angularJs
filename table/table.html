@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="../angularjs/angular.js"></script>
+        <script src="./index.js"></script>
+    </head>
+    <body ng-app="myApp">
+        <div ng-controller="myCtrl">
+            <h1>Data Table Show</h1>
+            <table border="1">
+                <thead>
+                    <tr> 
+                        <th>Name</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="value in items">
+                        <td>{{value.Name}}</td>
+                        <td>{{value.Email}}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+
+
+    </body>
+</html>
